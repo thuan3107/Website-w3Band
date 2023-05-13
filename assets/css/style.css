@@ -9,6 +9,27 @@ html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Class common */
+
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+.col-haft {
+    width: 50%;
+}
+.col-third {
+    width: 33.333%;
+}
 /* Giai quyet van de float */
 .clear {
    clear: both; 
@@ -17,6 +38,8 @@ html {
 .text-white {
     color: #fff !important;
 }
+
+/* End Class common */
 
 /* 
 1. Từ ngoài vào trong
@@ -42,7 +65,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-     z-index: 1; /*Cho header noi len */
+    z-index: 1; /*Cho header noi len */
 }
 
 #nav {
@@ -58,7 +81,6 @@ html {
    display: inline-block; 
 }
 #nav li {
-    
     position: relative;
 }
 
@@ -106,7 +128,6 @@ html {
 
 #header .search-btn {
     float: right;
-    
 }
 
 #header .search-icon {
@@ -183,17 +204,11 @@ html {
 
 #content .members-list {
     margin-top: 48px; 
-    text-align: center;
-}
-
-#content .member-item {
-     float: left; /*Cho ảnh nằm ngang */
-     width: 33.333%;
+    /* text-align: center; */
 }
 
 #content .member-name {
     font-size: 15px;
-    
 }
 
 #content .member-img {
@@ -238,15 +253,8 @@ html {
 
 /* Place */
 .places-list {
-    margin: 32px -8px 48px;
-
-}
-
-.place-item {
-    float: left;
-    width: 33.333%;
-    padding: 0 8px;
-   
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
@@ -295,8 +303,6 @@ html {
 }
 
 
-
-
 /* footer section */
 #footer{
     
@@ -313,7 +319,6 @@ html {
     align-items: center;
     justify-content: center;
     display: none;
-    
 }
 
 .modal.open {
