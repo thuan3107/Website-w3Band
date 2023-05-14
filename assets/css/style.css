@@ -19,6 +19,22 @@ html {
     margin-left: -8px;
     margin-right: -8px;
 }
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.mt-16 {
+    margin-top: 16px !important;
+}
+
+/* Presudo nay thay the cho class clear  */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .col {
     float: left;
     padding-left: 8px;
@@ -27,14 +43,36 @@ html {
 .col-haft {
     width: 50%;
 }
+.col-full {
+    width: 100%;
+}
 .col-third {
     width: 33.333%;
 }
-/* Giai quyet van de float */
-.clear {
-   clear: both; 
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 11px 16px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 15px;
+    border: none;
 }
 
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
+}
+/* Giai quyet van de float
+.clear {
+   clear: both; 
+} */
+
+.pull-right {
+    float: right !important;
+}
 .text-white {
     color: #fff !important;
 }
@@ -176,7 +214,7 @@ html {
 
 #content .content-section{
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -254,7 +292,7 @@ html {
 /* Place */
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
 }
 
 .place-img {
@@ -287,26 +325,76 @@ html {
    line-height: 1.4;
 }
 
-.place-buy-btn {
-    background-color: #000;
-    color: #fff;
-    padding: 11px 16px;
-    text-decoration: none;
+
+
+/* End Place */
+
+/* Start contact form */
+
+.contact-content {
+    margin-top: 48px;
+}
+
+.contact-info {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+    width: 30px;
     display: inline-block;
-    margin-top: 15px;
-
 }
 
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
+.contact-form {
+    font-size: 15px;
 }
+
+.contact-form .form-control {
+    padding: 10px;
+    border: 1px solid #ccc!important;
+    width: 100%;
+}
+
+
+/* End contact form */
+
+/*Begin Map section */
+.map-section img {
+    width: 100%;
+}
+/*End Map section */
 
 
 /* footer section */
 #footer{
-    
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .socials-list{
+   margin-bottom: 15px;
+   font-size: 24px;
+}
+
+#footer .socials-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .socials-list a:hover,
+#footer .copyright a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+#footer .copyright {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* end footer section */
  
 /* Start Modal */
 .modal {
@@ -415,9 +503,4 @@ html {
         transform: translateY(0);
     }
 }
-
-
-
-
-
 /* End Modal */
